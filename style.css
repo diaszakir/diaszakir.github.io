@@ -1,0 +1,22 @@
+body {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "Times New Roman", Times, Arial, sans-serif;
+  /* background-color: rgb(29, 2, 62);
+  color: rgb(93, 37, 234); */
+}
+
+.portfolio {
+}
+
+.portfolio-header {
+  display: flex;
+  justify-content: space-between;
+  padding: 10px 20px;
+}
+
+.portfolio-naviagation {
+  display: flex;
+  gap: 10px;
+}
