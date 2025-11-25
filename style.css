@@ -22,7 +22,23 @@ body {
 
 .portfolio-naviagation {
   display: flex;
-  gap: 10px;
+  gap: 15px;
+}
+
+.portfolio-link {
+  font-size: 20px;
+  text-decoration: none;
+  color: rgb(40, 40, 40);
+  cursor: pointer;
+}
+
+.portfolio-link:hover {
+  text-decoration: underline;
+}
+
+.portfolio-link:active {
+  text-decoration: none;
+  font-weight: bold;
 }
 
 .portfolio-main {
