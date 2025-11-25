@@ -1,8 +1,13 @@
+html {
+  scroll-behavior: smooth;
+}
+
 body {
   margin: 0;
   padding: 0;
   box-sizing: border-box;
   font-family: "Montserrat", Times, Arial, sans-serif;
+
   /* background-color: rgb(29, 2, 62);
   color: rgb(240, 240, 240); */
 }
