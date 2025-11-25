@@ -42,5 +42,17 @@ body {
 }
 
 .portfolio-main {
-  margin-top: 70px;
+  margin: 0 auto;
+  max-width: 1400px;
+}
+
+.about-me {
+  height: 100vh; /*Делает секцию полной для экрана*/
+  display: flex;
+  align-items: center;
+  gap: 40px;
+}
+
+.about-video {
+  height: 100vh;
 }
