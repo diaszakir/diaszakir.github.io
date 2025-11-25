@@ -4,20 +4,28 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Dias Zakir</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Anton&family=Arimo:ital,wght@0,400..700;1,400..700&family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap"
+      rel="stylesheet"
+    />
     <link rel="stylesheet" href="style.css" />
   </head>
   <body>
-    <header class="portfolio portfolio-header">
-      <a href="./index.html" class="portfolio portfolio-user">Dias Zakir</a>
-      <nav class="portfolio-naviagation">
-        <a class="portfolio portfolio-link" href="#about">About me</a>
-        <a class="portfolio portfolio-link" href="#stack">Stack</a>
-        <a class="portfolio portfolio-link" href="#projects">Projects</a>
-        <a class="portfolio portfolio-link" href="#contacts">Contacts</a>
-      </nav>
+    <header class="portfolio-header">
+      <div class="portfolio-header-inner">
+        <a href="./index.html" class="portfolio portfolio-user">Dias Zakir</a>
+        <nav class="portfolio-naviagation">
+          <a class="portfolio-link" href="#about">About me</a>
+          <a class="portfolio-link" href="#stack">Stack</a>
+          <a class="portfolio-link" href="#projects">Projects</a>
+          <a class="portfolio-link" href="#contacts">Contacts</a>
+        </nav>
+      </div>
     </header>
-    <main>
-      <section id="about">
+    <main class="portfolio-main">
+      <section id="about" class="about">
         <h1>Hello, my name is Dias Zakir</h1>
         <h3>I'm a Python Backend Developer</h3>
         <p>
@@ -26,8 +34,8 @@
         </p>
         <p><em>Video in future</em></p>
       </section>
-      <section id="stack">
-        <h2>My stack:</h2>
+      <section id="stack" class="stack">
+        <h2>Stack</h2>
         <div class="stack programming-languages">
           <h3>Programming Languages:</h3>
           <ul>
@@ -84,14 +92,15 @@
           >
         </p>
         <p>You can contact me:</p>
-        <input type="email" placeholder="Type your email" />
-        <input type="textarea" placeholder="Type your message" />
+        <input type="email" placeholder="Type your email" required />
+        <input type="textarea" placeholder="Type your message" required />
+        <button type="submit">Submit</button>
       </section>
     </main>
-    <footer>
+    <footer class="portfolio-footer">
       <p>Dias Zakir | 2025</p>
       <a href="mailto:diaszakir1@outlook.com">Email</a>
-      <a href="https://t.me/diko_skk" , target="_blank">Telegram</a>
+      <a href="https://t.me/diko_skk" target="_blank">Telegram</a>
     </footer>
   </body>
 </html>

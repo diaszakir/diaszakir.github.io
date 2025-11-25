@@ -2,18 +2,29 @@ body {
   margin: 0;
   padding: 0;
   box-sizing: border-box;
-  font-family: "Times New Roman", Times, Arial, sans-serif;
+  font-family: "Montserrat", Times, Arial, sans-serif;
   /* background-color: rgb(29, 2, 62);
-  color: rgb(93, 37, 234); */
+  color: rgb(240, 240, 240); */
 }
 
 .portfolio-header {
+  position: fixed;
+  width: 100%;
+  top: 0;
+  background-color: rgba(255, 255, 255, 0.7);
+}
+
+.portfolio-header-inner {
   display: flex;
   justify-content: space-between;
-  padding: 10px 20px;
+  padding: 15px 40px;
 }
 
 .portfolio-naviagation {
   display: flex;
   gap: 10px;
+}
+
+.portfolio-main {
+  margin-top: 70px;
 }
