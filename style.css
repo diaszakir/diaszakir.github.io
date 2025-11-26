@@ -56,7 +56,11 @@ body {
   height: 100vh; /*Делает секцию полной для экрана*/
   display: flex;
   align-items: center;
-  gap: 40px;
+  gap: 80px;
+}
+
+.about-description {
+  max-width: 700px;
 }
 
 .about-video {
@@ -69,11 +73,12 @@ body {
   justify-content: center;
   align-items: center;
   min-height: 100vh;
+  padding: 45px 20px;
 }
 
 .about-stack h2 {
-  margin-top: 50px;
-  font-size: 30px;
+  margin: 0 0 20px;
+  font-size: 28px;
 }
 
 .stack {
