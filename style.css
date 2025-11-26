@@ -48,7 +48,8 @@ body {
 
 .portfolio-main {
   margin: 0 auto;
-  max-width: 1400px;
+  max-width: 1200px;
+  width: 95%;
 }
 
 .about-me {
@@ -71,14 +72,14 @@ body {
 }
 
 .about-stack h2 {
-  margin-top: 70px;
+  margin-top: 50px;
   font-size: 30px;
 }
 
 .stack {
   display: grid;
   grid-template-columns: repeat(3, 400px);
-  grid-template-rows: 300px 200px 200px;
+  grid-template-rows: repeat(2, 300px);
   /* column-gap: 75px;
   row-gap: 60px; */
 }
@@ -86,6 +87,7 @@ body {
 .stack-item {
   display: flex;
   flex-direction: column;
+  justify-self: center;
 }
 
 .programming-languages {
