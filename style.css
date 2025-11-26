@@ -87,8 +87,15 @@ body {
 .stack-item {
   display: flex;
   flex-direction: column;
-  justify-self: center;
+  align-items: center;
+  gap: 10px;
 }
 
-.programming-languages {
+.stack-item ul {
+  display: flex;
+  flex-direction: column;
+  margin: 0;
+  padding: 0;
+  list-style: none;
+  gap: 10px;
 }
