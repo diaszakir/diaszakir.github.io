@@ -1,9 +1,9 @@
 :root {
-  --bg: #f0f8ff; /* light blue */
-  --panel: #ffffff; /* solid white panel */
+  --bg: #f0f8ff;
+  --panel: #ffffff;
   --muted: #6b7280;
-  --primary: #2563eb; /* blue */
-  --accent: #60a5fa; /* light blue */
+  --primary: #2563eb;
+  --accent: #60a5fa;
   --text: #0f172a;
   --glass: rgba(255, 255, 255, 0.75);
 }
@@ -13,13 +13,15 @@ html {
 }
 
 body {
-  margin: 0;
+  margin: 0 auto;
   padding: 0;
   box-sizing: border-box;
   font-family: "Montserrat", Times, Arial, sans-serif;
   background-color: var(--bg);
   color: var(--text);
   -webkit-font-smoothing: antialiased;
+  max-width: 1920px;
+  min-width: 720px;
 }
 
 .portfolio-header {
@@ -41,6 +43,10 @@ body {
   gap: 15px;
 }
 
+#portfolio-link {
+  font-size: 28px;
+}
+
 .portfolio-link {
   font-size: 20px;
   text-decoration: none;
@@ -50,7 +56,7 @@ body {
 }
 
 .portfolio-link:hover {
-  text-decoration: underline;
+  text-decoration: none;
 }
 
 .portfolio-link:active {
@@ -61,11 +67,10 @@ body {
 .portfolio-main {
   margin: 0 auto;
   max-width: 1200px;
-  width: 95%;
 }
 
 .about-me {
-  height: 100vh; /*Делает секцию полной для экрана*/
+  height: 100vh;
   display: flex;
   align-items: center;
   gap: 80px;
@@ -329,14 +334,45 @@ body {
 }
 
 .portfolio-footer {
-  width: 100%;
-  height: 120px;
-  background-color: #1c1b1b;
-  color: white;
+  /* width: 100%; */
+  background-color: #0b1220; /* dark navy */
+  color: #fff;
+  padding: 36px 24px;
+  font-size: 16px;
+  line-height: 1.6;
+}
+
+.portfolio-footer > * {
+  max-width: 1500px;
+  margin: 0 auto;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  /* gap: 24px; */
+  flex-wrap: wrap;
+}
+
+.portfolio-footer nav {
+  display: flex;
+  gap: 18px;
+  align-items: center;
+  flex-wrap: wrap;
+}
+
+.portfolio-footer nav a {
+  color: rgba(255, 255, 255, 0.96);
+  text-decoration: none;
+  font-size: 15px;
+  font-weight: 600;
+  letter-spacing: 0.2px;
+}
+
+.portfolio-footer p {
+  color: rgba(255, 255, 255, 0.78);
+  font-size: 14px;
 }
 
 .portfolio-footer a {
-  display: inline-block;
   text-decoration: none;
 }
 
