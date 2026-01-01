@@ -15,7 +15,12 @@
   <body>
     <header class="portfolio-header">
       <div class="portfolio-header-inner">
-        <a href="./index.html" class="portfolio portfolio-link">Dias Zakir</a>
+        <a
+          href="./index.html"
+          class="portfolio portfolio-link"
+          id="portfolio-link"
+          >Dias Zakir</a
+        >
         <nav class="portfolio-naviagation">
           <a class="portfolio-link" href="#about">About me</a>
           <a class="portfolio-link" href="#stack">Stack</a>
@@ -104,6 +109,7 @@
         </div>
       </section>
       <!-- <section id="projects" class="about-projects">
+      <!-- <section id="projects" class="about-projects">
         <h2>Projects</h2>
         <div class="project">
           <div class="project-item">
@@ -150,36 +156,72 @@
           </div>
         </div>
       </section> -->
+      </section> -->
       <section id="contacts" class="about-contacts">
-        <h1>Contacts</h1>
-        <p>
-          Email:
-          <a href="mailto:diaszakir1@outlook.com">diaszakir1@outlook.com</a>
-        </p>
-        <p>
-          Telegram:
-          <a href="https://t.me/diko_skk" , target="_blank">@diko_skk</a>
-        </p>
-        <p>
-          Github:
-          <a href="https://github.com/diaszakir">diaszakir</a>
-        </p>
-        <p>
-          Linkeldin:
-          <a href="https://www.linkedin.com/in/dias-zakir-51261b296/"
-            >Dias Zakir</a
+        <h2>Socials</h2>
+        <div class="contact">
+          <a
+            href="mailto:diaszakir1@outlook.com"
+            target="_blank"
+            class="contact-card"
           >
-        </p>
-        <p>You can contact me:</p>
+            <img
+              src="static/email-mail-svgrepo-com.svg"
+              alt="email-icon"
+              class="contact-img"
+            />
+            <p>Email</p>
+          </a>
+          <a href="https://t.me/diko_skk" target="_blank" class="contact-card">
+            <img
+              src="static/telegram-svgrepo-com.svg"
+              alt="telegram-icon"
+              class="contact-img"
+            />
+            <p>Telegram</p>
+          </a>
+          <a
+            href="https://github.com/diaszakir"
+            target="_blank"
+            class="contact-card"
+          >
+            <img
+              src="static/github-svgrepo-com.svg"
+              alt="github-icon"
+              class="contact-img"
+            />
+            <p>GitHub</p>
+          </a>
+          <a
+            href="https://www.linkedin.com/in/dias-zakir-51261b296/"
+            target="_blank"
+            class="contact-card"
+          >
+            <img
+              src="static/linkedin-svgrepo-com.svg"
+              alt="linkedin-icon"
+              class="contact-img"
+            />
+            <p>Linkedln</p>
+          </a>
+        </div>
+        <!-- WILL BE ADDED IN NEXT VERSIONS WITH BACKEND -->
+        <!-- <p>You can contact me:</p>
         <input type="email" placeholder="Type your email" required />
         <input type="textarea" placeholder="Type your message" required />
-        <button type="submit">Submit</button>
+        <button type="submit">Submit</button> -->
       </section>
     </main>
     <footer class="portfolio-footer">
-      <p>Dias Zakir | 2025</p>
-      <a href="mailto:diaszakir1@outlook.com">Email</a>
-      <a href="https://t.me/diko_skk" target="_blank">Telegram</a>
+      <div>
+        <nav>
+          <a href="#about">About</a>
+          <a href="#stack">Stack</a>
+          <a href="#projects">Projects</a>
+          <a href="#contacts">Contact</a>
+        </nav>
+        <p>© 2026 Dias Zakir</p>
+      </div>
     </footer>
   </body>
 </html>
