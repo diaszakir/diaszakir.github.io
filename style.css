@@ -273,12 +273,19 @@ body {
   flex-direction: column;
   justify-content: center;
   align-items: center;
-  min-height: 100vh;
+  min-height: 80vh;
+  padding: 40px 20px;
 }
 
 .contact {
-  display: flex;
-  gap: 70px;
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
+  gap: 28px;
+  justify-items: center;
+  align-items: stretch;
+  max-width: 1100px;
+  width: 100%;
+  margin: 0 auto;
 }
 
 .contact-card {
@@ -286,12 +293,39 @@ body {
   flex-direction: column;
   align-items: center;
   text-decoration: none;
-  color: #000;
+  color: var(--text);
+  background-color: var(--panel);
+  padding: 18px 20px;
+  border-radius: 10px;
+  border: 1px solid rgba(15, 23, 42, 0.06);
+  box-shadow: 0 8px 20px rgba(15, 23, 42, 0.04);
+  width: 100%;
+  max-width: 220px;
+  transition: transform 180ms ease, box-shadow 180ms ease;
+}
+
+.contact-card:hover,
+.contact-card:focus-within {
+  transform: translateY(-6px);
+  box-shadow: 0 18px 40px rgba(15, 23, 42, 0.12);
+}
+
+.contact-card p {
+  margin: 8px 0 0;
+  color: var(--muted);
+  font-size: 15px;
+  text-align: center;
+}
+
+.contact-card a {
+  color: var(--primary);
+  text-decoration: none;
+  font-weight: 600;
 }
 
 .contact-img {
-  width: 100px;
-  height: auto;
+  width: 76px;
+  height: 76px;
 }
 
 .portfolio-footer {
